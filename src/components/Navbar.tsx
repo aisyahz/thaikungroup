@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCart, Search, User, Menu, Globe } from 'lucide-react';
+import { Menu, Globe, MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -28,7 +28,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-3 md:gap-6">
-        <div className="flex items-center gap-2 border border-white/10 rounded-full px-3 py-1">
+        <div className="flex items-center gap-2 border border-white/10 rounded-full px-3 py-1 bg-white/5">
           <Globe size={14} className="text-gold" />
           <button 
             onClick={() => setLang(lang === 'BM' ? 'EN' : 'BM')}
@@ -37,14 +37,18 @@ export default function Navbar() {
             {lang}
           </button>
         </div>
-        <div className="hidden md:flex items-center gap-4 text-white/70">
-          <Search size={18} className="cursor-pointer hover:text-gold transition-colors" />
-          <User size={18} className="cursor-pointer hover:text-gold transition-colors" />
-        </div>
-        <div className="flex items-center gap-2 cursor-pointer group">
-          <ShoppingCart size={18} className="text-white group-hover:text-gold transition-colors" />
-          <span className="text-[10px] bg-gold text-black px-1.5 py-0.5 rounded-full font-bold">0</span>
-        </div>
+        
+        <a 
+          href="https://wa.me/60102082448" 
+          target="_blank" 
+          rel="noreferrer"
+          className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-sm group hover:bg-gold-bright transition-all"
+        >
+          <MessageCircle size={14} className="fill-black" />
+          <span className="text-[10px] font-bold tracking-[0.2em] uppercase">
+            {lang === 'BM' ? 'Order Sekarang' : 'Order Now'}
+          </span>
+        </a>
       </div>
     </motion.nav>
   );
