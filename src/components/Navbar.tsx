@@ -10,25 +10,25 @@ export default function Navbar() {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-[60] px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/40 border-b border-white/5"
+      className="fixed top-0 left-0 right-0 z-[60] px-6 py-5 flex items-center justify-between backdrop-blur-md bg-black/60 border-b border-white/5"
     >
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-6">
         <Menu className="lg:hidden text-white cursor-pointer" size={24} />
-        <div className="hidden lg:flex items-center gap-6 text-[10px] tracking-[0.3em] uppercase font-bold text-white/70">
+        <div className="hidden lg:flex items-center gap-6 text-[9px] tracking-[0.4em] uppercase font-bold text-white/60">
           <a href="#scents" className="hover:text-gold transition-colors">{t('nav_scents')}</a>
           <a href="#about" className="hover:text-gold transition-colors">{t('nav_collections')}</a>
           <a href="#agent" className="hover:text-gold transition-colors">{t('nav_agent')}</a>
         </div>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
+      <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
         <img 
           src="/logo-ai.png" 
           alt="Thaikun" 
-          className="h-8 md:h-12 w-auto object-contain"
+          className="h-9 md:h-14 w-auto object-contain"
           referrerPolicy="no-referrer"
         />
-        <h1 className="font-display text-lg md:text-xl tracking-[0.4em] text-white">
+        <h1 className="font-display text-base md:text-xl tracking-[0.5em] text-white">
           DIAMOND
         </h1>
       </div>
