@@ -47,10 +47,10 @@ function MainLayout() {
         href="https://wa.me/60102082448?text=Hi%20Thaikun%20Group%2C%20saya%20berminat%20dengan%20Diamond%20Car%20Fragrance." 
         target="_blank" 
         rel="noreferrer"
-        className="fixed bottom-8 right-8 z-[100] bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-2 group"
+        className="fixed bottom-6 right-5 md:bottom-8 md:right-8 z-[100] bg-[#25D366] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center gap-2 group"
       >
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-with-padding duration-500 whitespace-nowrap text-white font-bold tracking-wider px-0 group-hover:px-2">WhatsApp Us</span>
-        <MessageCircle size={28} className="text-white fill-white" />
+        <span className="max-w-0 overflow-hidden md:group-hover:max-w-xs transition-with-padding duration-500 whitespace-nowrap text-white text-[12px] md:text-sm font-bold tracking-wider px-0 md:group-hover:px-2">WhatsApp Us</span>
+        <MessageCircle size={22} className="md:w-7 md:h-7 text-white fill-white" />
       </a>
     </div>
   );
