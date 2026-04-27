@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image / Placeholder */}
@@ -12,30 +15,36 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1, ease: "easeOut" }}
         >
           <span className="text-gold text-[12px] md:text-[14px] tracking-[0.6em] uppercase font-bold mb-6 block gold-text-glow">
-            Couture Fragrance
+            {t('hero_badge')}
           </span>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-9xl tracking-[0.3em] mb-8 leading-tight">
-            <span className="text-reveal">DRIVE FRESH.</span><br/>
-            <span className="font-serif italic font-light tracking-tight text-white/90">Arrive Impressed.</span>
+          <h1 className="font-display text-4xl md:text-7xl lg:text-8xl tracking-[0.2em] mb-8 leading-tight">
+            <span className="text-reveal">{t('hero_title_1')}</span><br/>
+            <span className="font-serif italic font-light tracking-tight text-white/90">{t('hero_title_2')}</span>
           </h1>
-          <p className="text-white/60 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-12">
-            Premium car fragrance curated for the sophisticated driver. Elevate your journey with long-lasting, natural scents.
+          <p className="text-white/60 text-base md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-12">
+            {t('hero_sub')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="group relative px-10 py-5 bg-gold text-black font-bold tracking-[0.2em] uppercase text-[12px] overflow-hidden transition-all hover:pr-14">
-              <span className="relative z-10 text-black">Shop Now</span>
+            <button 
+              onClick={() => document.getElementById('scents')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group relative px-10 py-5 bg-gold text-black font-bold tracking-[0.2em] uppercase text-[12px] overflow-hidden transition-all hover:pr-14 w-full sm:w-auto"
+            >
+              <span className="relative z-10 text-black">{t('hero_cta_buy')}</span>
               <ArrowRight className="absolute right-6 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" size={20} />
             </button>
-            <button className="px-10 py-5 border border-white/20 text-white font-medium tracking-[0.2em] uppercase text-[12px] hover:bg-white hover:text-black transition-all">
-              Explore Scents
+            <button 
+              onClick={() => document.getElementById('agent')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-10 py-5 border border-white/20 text-white font-bold tracking-[0.2em] uppercase text-[12px] hover:bg-white hover:text-black transition-all w-full sm:w-auto"
+            >
+              {t('hero_cta_agent')}
             </button>
           </div>
         </motion.div>
@@ -43,16 +52,19 @@ export default function Hero() {
 
       {/* Decorative Floating Bottle (Hero) */}
       <motion.div 
-        animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 right-10 lg:right-24 hidden md:block opacity-40 hover:opacity-100 transition-opacity cursor-pointer"
+        animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-20 right-10 lg:right-24 hidden md:block opacity-60 hover:opacity-100 transition-all cursor-pointer group"
       >
-        <div className="glass-card p-6 rounded-sm border-gold/20">
-          <div className="w-16 h-20 bg-forest/40 rounded shadow-2xl relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-full h-[60%] bg-gold/10" />
-             <div className="absolute bottom-0 left-0 w-full h-[40%] border-t border-white/10" />
-          </div>
-          <div className="mt-4 text-[8px] tracking-widest text-center uppercase text-gold">Diamond Signature</div>
+        <div className="glass-card p-6 rounded-2xl border-gold/20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gold/5 blur-2xl group-hover:bg-gold/10 transition-colors" />
+          <img 
+            src="https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/honeydew.png" 
+            alt="Signature Scent" 
+            className="w-24 h-32 object-contain relative z-10 drop-shadow-2xl group-hover:scale-110 transition-transform duration-500"
+            referrerPolicy="no-referrer"
+          />
+          <div className="mt-4 text-[10px] tracking-[0.4em] text-center uppercase text-gold font-bold relative z-10">Signature</div>
         </div>
       </motion.div>
     </section>

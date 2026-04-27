@@ -1,7 +1,10 @@
 import React from 'react';
-import { Instagram, Twitter, Facebook } from 'lucide-react';
+import { Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
+  const { lang, t } = useLanguage();
+
   return (
     <footer className="bg-[#020202] py-20 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
@@ -9,34 +12,36 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h2 className="font-display text-2xl tracking-[0.4em] text-white mb-6">DIAMOND</h2>
             <p className="text-white/40 text-[10px] tracking-widest leading-loose uppercase">
-              REDEFINE YOUR DRIVING SPACE THROUGH THE ART OF SCENT. LUXURY IN EVERY BREATH.
+              {t('footer_desc')}
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-gold mb-8">Stay Connected</h4>
+            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-gold mb-8">{lang === 'BM' ? 'Hubungi Kami' : 'Contact Us'}</h4>
             <div className="flex gap-8 text-white/60">
-              <Instagram size={20} className="hover:text-gold cursor-pointer transition-colors" />
-              <Facebook size={20} className="hover:text-gold cursor-pointer transition-colors" />
-              <Twitter size={20} className="hover:text-gold cursor-pointer transition-colors" />
+              <a href="https://wa.me/60102082448" target="_blank" rel="noreferrer" className="hover:text-gold cursor-pointer transition-colors">
+                <MessageCircle size={24} />
+              </a>
+              <Facebook size={24} className="hover:text-gold cursor-pointer transition-colors" />
+              <Instagram size={24} className="hover:text-gold cursor-pointer transition-colors" />
             </div>
+            <p className="mt-4 text-[11px] text-white/40 tracking-widest">+60 10-208 2448</p>
           </div>
 
           <div className="text-center md:text-right">
-            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-white mb-6">Newsletter</h4>
-            <div className="relative">
-              <input 
-                type="email" 
-                placeholder="YOUR EMAIL" 
-                className="bg-transparent border-b border-white/20 w-full py-2 px-0 text-[10px] tracking-[0.2em] focus:outline-none focus:border-gold transition-colors text-white placeholder:text-white/20 uppercase"
-              />
-              <button className="absolute right-0 bottom-2 text-[10px] tracking-[0.2em] font-bold text-gold hover:text-white transition-colors">JOIN</button>
+            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-white mb-6">Thaikun Group Sdn Bhd</h4>
+            <div className="text-[10px] tracking-widest text-white/40 space-y-2 uppercase">
+              <p>Established Since 2023</p>
+              <p>Malaysia's Premium Choice</p>
+              <div className="pt-4 flex justify-center md:justify-end gap-4 opacity-50">
+                <img src="https://flagcdn.com/w20/my.png" alt="Malaysia" className="w-5 h-auto grayscale hover:grayscale-0 transition-all" />
+              </div>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 opacity-50">
-          <p className="text-[9px] tracking-widest uppercase mb-4 md:mb-0">© 2026 Diamond Car Fragrance. Crafted for Excellence.</p>
+          <p className="text-[9px] tracking-widest uppercase mb-4 md:mb-0">© 2026 Thaikun Group Sdn Bhd. All Rights Reserved.</p>
           <div className="flex gap-8 text-[9px] tracking-widest uppercase">
             <a href="#" className="hover:text-gold transition-colors">Privacy</a>
             <a href="#" className="hover:text-gold transition-colors">Terms</a>

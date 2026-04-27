@@ -1,15 +1,18 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Diamond, Leaf, Sparkles, Gift } from 'lucide-react';
-
-const FEATURE_DATA = [
-  { icon: Diamond, title: "Premium Quality", desc: "Long-lasting craftsmanship" },
-  { icon: Leaf, title: "Natural & Fresh", desc: "Pure essential oils" },
-  { icon: Sparkles, title: "Stylish Design", desc: "Minimalist glass bottle" },
-  { icon: Gift, title: "Perfect Gift", desc: "For the luxury enthusiast" },
-];
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Features() {
+  const { t } = useLanguage();
+
+  const FEATURE_DATA = [
+    { icon: Diamond, title: t('feat_title_1'), desc: t('feat_desc_1') },
+    { icon: Leaf, title: t('feat_title_2'), desc: t('feat_desc_2') },
+    { icon: Sparkles, title: t('feat_title_3'), desc: t('feat_desc_3') },
+    { icon: Gift, title: t('feat_title_4'), desc: t('feat_desc_4') },
+  ];
+
   return (
     <section className="py-20 relative overflow-hidden bg-forest/5 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
