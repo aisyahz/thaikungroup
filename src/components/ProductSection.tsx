@@ -3,11 +3,11 @@ import { motion } from 'motion/react';
 
 const ScentTypes = [
   { name: 'Vanilla', color: '#FFFFFF', liquid: 'rgba(255, 255, 255, 0.4)', label: 'Pure Indulgence' },
-  { name: 'Diamond', color: '#142319', liquid: 'rgba(20, 35, 25, 0.8)', label: 'Signature Excellence' },
+  { name: 'Honeydew', color: '#A0E0A0', liquid: 'rgba(160, 224, 160, 0.7)', label: 'Fresh Refreshment' },
   { name: 'Redberry', color: '#8B0000', liquid: 'rgba(139, 0, 0, 0.6)', label: 'Bold Vitality' },
   { name: 'Billionaire', color: '#00008B', liquid: 'rgba(0, 0, 139, 0.6)', label: 'Royal Presence' },
   { name: 'Somebody', color: '#008080', liquid: 'rgba(0, 128, 128, 0.6)', label: 'Mystic Ocean' },
-  { name: 'MNG', color: '#FFA500', liquid: 'rgba(255, 165, 0, 0.6)', label: 'Golden Ember' },
+  { name: 'Mango', color: '#FFA500', liquid: 'rgba(255, 165, 0, 0.6)', label: 'Tropical Paradise' },
 ];
 
 export default function ProductSection() {
