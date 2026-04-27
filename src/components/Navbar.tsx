@@ -21,8 +21,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2">
-        <h1 className="font-display text-xl md:text-2xl tracking-[0.4em] text-white flex items-center gap-2">
+      <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
+        <img 
+          src="/logo.png" 
+          alt="Thaikun" 
+          className="h-8 md:h-12 w-auto object-contain"
+          referrerPolicy="no-referrer"
+        />
+        <h1 className="font-display text-lg md:text-xl tracking-[0.4em] text-white">
           DIAMOND
         </h1>
       </div>
