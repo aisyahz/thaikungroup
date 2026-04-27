@@ -23,7 +23,7 @@ export default function Navbar() {
 
       <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
         <img 
-          src="/logo.png" 
+          src="/logo-ai.png" 
           alt="Thaikun" 
           className="h-8 md:h-12 w-auto object-contain"
           referrerPolicy="no-referrer"
