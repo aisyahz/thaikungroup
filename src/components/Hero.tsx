@@ -25,8 +25,8 @@ export default function Hero() {
             {t('hero_badge')}
           </span>
           
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-9xl tracking-[0.2em] mb-10 leading-[1.1] break-words">
-            <span className="text-reveal inline-block pb-2">{t('hero_title_1')}</span><br/>
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-[0.2em] mb-10 leading-tight break-words">
+            <span className="text-reveal inline-block pb-4">{t('hero_title_1')}</span><br/>
             <span className="font-serif italic font-light tracking-tight text-white/90">{t('hero_title_2')}</span>
           </h1>
 
