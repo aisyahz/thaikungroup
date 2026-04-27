@@ -8,7 +8,7 @@ const ScentTypes = [
     id: 'vanilla',
     name: 'Vanilla', 
     color: 'rgba(255, 255, 255, 0.4)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/vanilla.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/vanilla.png', 
     label: { BM: 'Lembut & Wangi', EN: 'Smooth & Warm' },
     status: { BM: 'Paling Laris', EN: 'Best Seller' }
   },
@@ -16,7 +16,7 @@ const ScentTypes = [
     id: 'honeydew',
     name: 'Honeydew', 
     color: 'rgba(160, 224, 160, 0.6)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/honeydew.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/honeydew.png', 
     label: { BM: 'Segar & Manis', EN: 'Fresh & Green' },
     status: { BM: 'Baru', EN: 'New' }
   },
@@ -24,28 +24,28 @@ const ScentTypes = [
     id: 'redberry',
     name: 'Redberry', 
     color: 'rgba(139, 0, 0, 0.5)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/redberry.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/redberry.png', 
     label: { BM: 'Kuat & Berani', EN: 'Deep & Vibrant' }
   },
   { 
     id: 'billionaire',
     name: 'Billionaire', 
     color: 'rgba(0, 0, 139, 0.5)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/billionaire.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/billionaire.png', 
     label: { BM: 'Mewah & Eksklusif', EN: 'Royal & Bold' }
   },
   { 
     id: 'somebody',
     name: 'Somebody', 
     color: 'rgba(0, 128, 128, 0.5)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/somebody.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/somebody.png', 
     label: { BM: 'Misteri & Tenang', EN: 'Mystic & Teal' }
   },
   { 
     id: 'mango',
     name: 'Mango', 
     color: 'rgba(255, 165, 0, 0.5)', 
-    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/mango.png', 
+    image: 'https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/mango.png', 
     label: { BM: 'Tropikal & Manis', EN: 'Tropical & Sweet' }
   },
 ];

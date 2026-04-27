@@ -38,7 +38,7 @@ export default function Hero() {
               className="group relative px-10 py-5 bg-gold text-black font-bold tracking-[0.2em] uppercase text-[12px] overflow-hidden transition-all hover:pr-14 w-full sm:w-auto"
             >
               <span className="relative z-10 text-black">{t('hero_cta_buy')}</span>
-              <ArrowRight className="absolute right-6 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" size={20} />
+              <ArrowRight className="absolute right-4 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" size={20} />
             </button>
             <button 
               onClick={() => document.getElementById('agent')?.scrollIntoView({ behavior: 'smooth' })}
@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="glass-card p-6 rounded-2xl border-gold/20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gold/5 blur-2xl group-hover:bg-gold/10 transition-colors" />
           <img 
-            src="https://raw.githubusercontent.com/aisyahz/thaikungroup/main/perfume%20car/honeydew.png" 
+            src="https://raw.githubusercontent.com/aisyahz/thaikungroup/dev/perfume%20car/honeydew.png" 
             alt="Signature Scent" 
             className="w-24 h-32 object-contain relative z-10 drop-shadow-2xl group-hover:scale-110 transition-transform duration-500"
             referrerPolicy="no-referrer"
