@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Gem } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
@@ -22,8 +22,10 @@ export default function Hero() {
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1, ease: "easeOut" }}
         >
-          <span className="text-gold text-[10px] md:text-[13px] tracking-[0.4em] md:tracking-[0.5em] uppercase font-bold mb-8 md:mb-10 block gold-text-glow">
+          <span className="text-gold text-[10px] md:text-[13px] tracking-[0.4em] md:tracking-[0.5em] uppercase font-bold mb-8 md:mb-10 flex items-center justify-center gap-2 gold-text-glow">
+            <Gem size={14} className="animate-pulse" />
             {t('hero_badge')}
+            <Gem size={14} className="animate-pulse" />
           </span>
           
           <h1 className="font-display tracking-[0.1em] md:tracking-[0.15em] mb-10 md:mb-12 flex flex-col items-center">

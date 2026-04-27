@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Globe, MessageCircle, X } from 'lucide-react';
+import { Menu, Globe, MessageCircle, X, Gem } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -34,18 +34,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3">
-          <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
-            <img 
-              src="/logo-ai.png" 
-              alt="Diamond Car Fragrance Logo" 
-              className="h-8 md:h-12 w-auto object-contain transition-transform group-hover:scale-110"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-              }}
-              referrerPolicy="no-referrer"
-            />
-            <h1 className="font-display text-base md:text-xl tracking-[0.3em] md:tracking-[0.5em] text-white">
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <div className="flex flex-col items-center justify-center gap-1 group cursor-pointer">
+            <h1 className="font-display text-base md:text-xl tracking-[0.4em] text-white leading-none">
               DIAMOND
             </h1>
           </div>
