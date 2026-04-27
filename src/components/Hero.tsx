@@ -18,12 +18,12 @@ export default function Hero() {
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1, ease: "easeOut" }}
         >
-          <span className="text-gold text-[12px] md:text-[14px] tracking-[0.6em] uppercase font-semibold mb-6 block gold-text-glow">
-            Limited Edition
+          <span className="text-gold text-[12px] md:text-[14px] tracking-[0.6em] uppercase font-bold mb-6 block gold-text-glow">
+            Couture Fragrance
           </span>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-[0.3em] mb-8 leading-tight">
-            DRIVE FRESH.<br/>
-            <span className="font-serif italic font-normal tracking-normal text-white/90">Arrive Impressed.</span>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-9xl tracking-[0.3em] mb-8 leading-tight">
+            <span className="text-reveal">DRIVE FRESH.</span><br/>
+            <span className="font-serif italic font-light tracking-tight text-white/90">Arrive Impressed.</span>
           </h1>
           <p className="text-white/60 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-12">
             Premium car fragrance curated for the sophisticated driver. Elevate your journey with long-lasting, natural scents.

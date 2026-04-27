@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import ProductSection from './components/ProductSection';
+import AgentPackage from './components/AgentPackage';
 import Footer from './components/Footer';
 import FloatingLeaves from './components/FloatingLeaves';
 
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Features />
         <ProductSection />
+        <AgentPackage />
         
         {/* Banner Section */}
         <section className="py-32 bg-forest/20 relative overflow-hidden border-y border-white/5">

@@ -34,31 +34,31 @@ export default function ProductSection() {
             >
               {/* Bottle Visualization (Abstract/SVG based for premium look) */}
               <div className="relative h-64 mb-8 flex items-center justify-center">
-                <div className="absolute inset-0 bg-radial-gradient from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-radial-gradient from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 
                 {/* Hanging Rope */}
-                <div className="absolute top-0 w-[1px] h-20 bg-gray-600 left-1/2 -translate-x-1/2 z-0" />
+                <div className="absolute top-0 w-[1px] h-20 bg-gray-500 left-1/2 -translate-x-1/2 z-0" />
                 
                 {/* Glass Bottle */}
-                <div className="relative w-24 h-32 z-10 transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-2">
-                   <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 overflow-hidden shadow-2xl">
+                <div className="relative w-24 h-32 z-10 transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-2 group-hover:gold-border-glow">
+                   <div className="absolute inset-0 bg-white/15 backdrop-blur-xl rounded-lg border border-white/30 overflow-hidden shadow-2xl">
                       {/* Liquid Content */}
                       <div 
-                        className="absolute bottom-0 left-0 right-0 transition-all duration-700 group-hover:h-[80%]" 
-                        style={{ backgroundColor: scent.liquid, height: '70%' }}
+                        className="absolute bottom-0 left-0 right-0 transition-all duration-1000 group-hover:h-[85%]" 
+                        style={{ backgroundColor: scent.liquid, height: '65%' }}
                       >
-                         <div className="absolute top-0 left-0 right-0 h-2 bg-white/20 blur-[1px]" />
+                         <div className="absolute top-0 left-0 right-0 h-4 bg-white/30 blur-[2px] animate-pulse" />
                       </div>
                       {/* Glass Sheen */}
-                      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/5" />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-white/10" />
                    </div>
                    {/* Cap */}
-                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-12 h-6 bg-[#1A1A1A] rounded-sm transform border-b border-white/10" />
+                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-12 h-6 bg-[#222] rounded-sm transform border-b border-white/20 shadow-xl" />
                 </div>
 
-                {/* Scent Glow */}
+                {/* Scent Glow - EPIC VERSION */}
                 <div 
-                  className="absolute bottom-10 w-32 h-32 rounded-full blur-[60px] opacity-20 pointer-events-none group-hover:opacity-40 transition-opacity duration-700"
+                  className="absolute bottom-10 w-48 h-48 rounded-full blur-[80px] opacity-10 pointer-events-none group-hover:opacity-60 transition-all duration-1000 scale-75 group-hover:scale-125"
                   style={{ backgroundColor: scent.color }}
                 />
               </div>
