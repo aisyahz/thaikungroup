@@ -11,14 +11,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 mb-20">
           <div className="text-center md:text-left">
             <h2 className="font-display text-2xl tracking-[0.4em] text-white mb-6">DIAMOND</h2>
-            <p className="text-white/40 text-[10px] tracking-widest leading-loose uppercase">
+            <p className="text-white/70 text-[10px] tracking-widest leading-loose uppercase">
               {t('footer_desc')}
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center">
             <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-gold mb-8">{lang === 'BM' ? 'Hubungi Kami' : 'Contact Us'}</h4>
-            <div className="flex gap-8 text-white/60">
+            <div className="flex gap-8 text-white/80">
               <a href="https://wa.me/60102082448" target="_blank" rel="noreferrer" className="hover:text-gold cursor-pointer transition-colors">
                 <MessageCircle size={24} />
               </a>
@@ -30,7 +30,7 @@ export default function Footer() {
 
           <div className="text-center md:text-right">
             <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-white mb-6">Thaikun Group Sdn Bhd</h4>
-            <div className="text-[10px] tracking-widest text-white/40 space-y-2 uppercase">
+            <div className="text-[10px] tracking-widest text-white/70 space-y-2 uppercase">
               <p>Established Since 2023</p>
               <p>Malaysia's Premium Choice</p>
               <div className="pt-4 flex justify-center md:justify-end gap-4 opacity-50">

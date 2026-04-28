@@ -30,7 +30,7 @@ export default function Features() {
                 <item.icon className="text-gold" size={28} strokeWidth={1.2} />
               </div>
               <h3 className="text-[12px] tracking-[0.3em] uppercase font-bold text-white mb-2">{item.title}</h3>
-              <p className="text-[10px] tracking-widest text-white/40 uppercase">{item.desc}</p>
+              <p className="text-[10px] tracking-widest text-white/80 uppercase">{item.desc}</p>
             </motion.div>
           ))}
         </div>

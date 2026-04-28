@@ -27,7 +27,7 @@ export default function Navbar() {
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          <div className="hidden lg:flex items-center gap-6 text-[9px] tracking-[0.4em] uppercase font-bold text-white/60">
+          <div className="hidden lg:flex items-center gap-6 text-[9px] tracking-[0.4em] uppercase font-bold text-white/90">
             {menuLinks.map((link) => (
               <a key={link.href} href={link.href} className="hover:text-gold transition-colors">{link.label}</a>
             ))}
@@ -35,8 +35,19 @@ export default function Navbar() {
         </div>
 
         <div className="absolute left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center justify-center gap-1 group cursor-pointer">
-            <h1 className="font-display text-base md:text-xl tracking-[0.4em] text-white leading-none">
+          <div className="flex items-center justify-center group cursor-pointer">
+            <img 
+              src="/logo-ai.png" 
+              alt="Thaikun Group Logo" 
+              className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+                const fallback = (e.target as HTMLElement).parentElement?.querySelector('.fallback-text');
+                if (fallback) (fallback as HTMLElement).style.display = 'block';
+              }}
+              referrerPolicy="no-referrer"
+            />
+            <h1 className="fallback-text hidden font-display text-base md:text-xl tracking-[0.4em] text-white leading-none">
               DIAMOND
             </h1>
           </div>

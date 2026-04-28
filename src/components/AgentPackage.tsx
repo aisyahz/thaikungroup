@@ -64,8 +64,10 @@ export default function AgentPackage() {
                               />
                            ))}
                         </div>
-                        <span className="text-3xl md:text-5xl font-serif text-white tracking-widest block">{t('agent_price_total')}</span>
-                        <p className="text-[9px] md:text-[10px] text-white/40 mt-2 tracking-[0.2em] uppercase">One-time registration</p>
+                        <div className="mb-8">
+                           <span className="text-4xl md:text-6xl font-serif text-gold tracking-widest block font-bold drop-shadow-lg">{t('agent_price_total')}</span>
+                           <p className="text-[10px] md:text-[12px] text-white/90 mt-2 tracking-[0.3em] uppercase font-bold">One-time registration</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -91,7 +93,7 @@ export default function AgentPackage() {
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif tracking-tight mb-6 md:mb-8 leading-tight text-white">
               {lang === 'BM' ? 'Jana Pendapatan Dengan' : 'Earn Income With'} <span className="text-reveal">Diamond Agent.</span>
             </h2>
-            <p className="text-white/60 text-base md:text-lg font-light tracking-wide mb-8 md:mb-10 leading-relaxed max-w-xl">
+            <p className="text-white/80 text-base md:text-lg font-light tracking-wide mb-8 md:mb-10 leading-relaxed max-w-xl">
               {t('agent_desc')}
             </p>
 
@@ -102,7 +104,7 @@ export default function AgentPackage() {
                 </div>
                 <div>
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">{t('agent_feat_1')}</h5>
-                  <p className="text-white/40 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">{t('agent_feat_1_sub')}</p>
+                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">{t('agent_feat_1_sub')}</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -111,7 +113,7 @@ export default function AgentPackage() {
                 </div>
                 <div>
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">{t('agent_feat_2')}</h5>
-                  <p className="text-white/40 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">{t('agent_feat_2_sub')}</p>
+                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">{t('agent_feat_2_sub')}</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -120,7 +122,7 @@ export default function AgentPackage() {
                 </div>
                 <div>
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">Consignment Price</h5>
-                  <p className="text-white/40 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">RM8 / piece / outlet</p>
+                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">RM8 / piece / outlet</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -129,7 +131,7 @@ export default function AgentPackage() {
                 </div>
                 <div>
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">Minimum Order</h5>
-                  <p className="text-white/40 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">1 tray minimum order</p>
+                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">1 tray minimum order</p>
                 </div>
               </div>
             </div>

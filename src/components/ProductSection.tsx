@@ -84,7 +84,10 @@ export default function ProductSection() {
       >
         <span className="text-gold text-[10px] tracking-[0.5em] uppercase font-semibold mb-4 block">{t('prod_badge')}</span>
         <h2 className="text-3xl md:text-5xl font-serif tracking-tight mb-4 text-white">{t('prod_title')}</h2>
-        <p className="text-gold font-bold tracking-widest text-xl mb-16 uppercase">{t('prod_price')}</p>
+        <div className="flex flex-col items-center mb-16">
+          <p className="text-gold font-bold tracking-[0.3em] text-lg md:text-2xl uppercase gold-text-glow">{t('prod_price')}</p>
+          <div className="h-1 w-20 bg-gold mt-2 opacity-50" />
+        </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {ScentTypes.map((scent, index) => (
@@ -122,9 +125,15 @@ export default function ProductSection() {
                 <h3 className="text-2xl font-display tracking-[0.2em] uppercase mb-2 text-white group-hover:text-gold transition-colors duration-500">
                   {scent.name}
                 </h3>
-                <p className="text-white/40 text-[10px] tracking-[0.3em] uppercase font-light mb-8 italic">
+                <p className="text-white/80 text-[10px] tracking-[0.3em] uppercase font-light mb-2 italic">
                   {scent.label[lang]}
                 </p>
+                
+                {/* Price Visibility Improvement */}
+                <div className="mb-6 flex flex-col items-center">
+                  <span className="text-[10px] text-gold font-bold tracking-widest uppercase mb-1">{lang === 'BM' ? 'Harga Retail' : 'Retail Price'}</span>
+                  <span className="text-3xl md:text-4xl font-serif text-white font-bold tracking-wider">RM11.00</span>
+                </div>
                 
                 {/* Quantity Selector */}
                 <div className="flex items-center justify-center gap-6 mb-8 bg-white/5 p-3 rounded border border-white/5">

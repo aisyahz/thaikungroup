@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import BannerSection from './components/BannerSection';
 import Features from './components/Features';
 import ProductSection from './components/ProductSection';
 import AgentPackage from './components/AgentPackage';
@@ -19,6 +20,7 @@ function MainLayout() {
       
       <main>
         <Hero />
+        <BannerSection />
         <Features />
         <ProductSection />
         <AgentPackage />

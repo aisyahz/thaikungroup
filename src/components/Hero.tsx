@@ -37,7 +37,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="text-white/60 text-sm md:text-lg font-light tracking-wide max-w-sm md:max-w-xl mx-auto mb-12 md:mb-16 leading-relaxed px-4">
+          <p className="text-white/80 text-sm md:text-lg font-light tracking-wide max-w-sm md:max-w-xl mx-auto mb-12 md:mb-16 leading-relaxed px-4">
             {t('hero_sub')}
           </p>
           
