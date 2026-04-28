@@ -22,6 +22,11 @@ export default function Hero() {
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1, ease: "easeOut" }}
         >
+          <img
+            src="/logo-ai.png"
+            alt="Thaikun Group Logo"
+            className="mx-auto mb-6 md:mb-8 h-20 md:h-28 lg:h-32 w-auto object-contain drop-shadow-2xl"
+          />
           <span className="text-gold text-[10px] md:text-[13px] tracking-[0.4em] md:tracking-[0.5em] uppercase font-bold mb-8 md:mb-10 flex items-center justify-center gap-2 gold-text-glow">
             <Gem size={14} className="animate-pulse" />
             {t('hero_badge')}
