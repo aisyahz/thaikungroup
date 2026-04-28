@@ -43,7 +43,7 @@ export default function AgentPackage() {
                         <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
                            <div className="bg-white/5 p-2 md:p-3 rounded border border-white/5 flex flex-col items-center">
                               <Package className="text-gold mb-1 md:mb-2" size={16} md:size={20} />
-                              <span className="text-[9px] md:text-[10px] tracking-widest uppercase font-bold text-white/80">90 PCS</span>
+                              <span className="text-[9px] md:text-[10px] tracking-widest uppercase font-mono font-bold text-white/80">90 PCS</span>
                            </div>
                            <div className="bg-white/5 p-2 md:p-3 rounded border border-white/5 flex flex-col items-center">
                               <TrendingUp className="text-gold mb-1 md:mb-2" size={16} md:size={20} />
@@ -65,7 +65,7 @@ export default function AgentPackage() {
                            ))}
                         </div>
                         <div className="mb-8">
-                           <span className="text-4xl md:text-6xl font-serif text-gold tracking-widest block font-bold drop-shadow-lg">{t('agent_price_total')}</span>
+                           <span className="text-4xl md:text-6xl font-mono text-gold tracking-widest block font-bold drop-shadow-lg">{t('agent_price_total')}</span>
                            <p className="text-[10px] md:text-[12px] text-white/90 mt-2 tracking-[0.3em] uppercase font-bold">One-time registration</p>
                         </div>
                      </div>
@@ -122,7 +122,7 @@ export default function AgentPackage() {
                 </div>
                 <div>
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">Consignment Price</h5>
-                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug">RM8 / piece / outlet</p>
+                  <p className="text-white/80 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug font-mono">RM8 / piece / outlet</p>
                 </div>
               </div>
               <div className="flex gap-4">

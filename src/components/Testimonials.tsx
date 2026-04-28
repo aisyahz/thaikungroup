@@ -125,7 +125,7 @@ const Testimonials = () => {
               ))}
             </div>
             <p className="text-[10px] tracking-widest text-white/50 uppercase font-bold">
-              + 2,500 Pelanggan Berpuas Hati
+              + <span className="font-mono text-white/70">2,500</span> Pelanggan Berpuas Hati
             </p>
           </div>
         </motion.div>

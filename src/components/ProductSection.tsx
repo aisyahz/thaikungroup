@@ -85,7 +85,7 @@ export default function ProductSection() {
         <span className="text-gold text-[10px] tracking-[0.5em] uppercase font-semibold mb-4 block">{t('prod_badge')}</span>
         <h2 className="text-3xl md:text-5xl font-serif tracking-tight mb-4 text-white">{t('prod_title')}</h2>
         <div className="flex flex-col items-center mb-16">
-          <p className="text-gold font-bold tracking-[0.3em] text-lg md:text-2xl uppercase gold-text-glow">{t('prod_price')}</p>
+          <p className="text-gold font-mono font-bold tracking-[0.1em] text-lg md:text-2xl uppercase gold-text-glow">{t('prod_price')}</p>
           <div className="h-1 w-20 bg-gold mt-2 opacity-50" />
         </div>
         
@@ -132,7 +132,7 @@ export default function ProductSection() {
                 {/* Price Visibility Improvement */}
                 <div className="mb-6 flex flex-col items-center">
                   <span className="text-[10px] text-gold font-bold tracking-widest uppercase mb-1">{lang === 'BM' ? 'Harga Retail' : 'Retail Price'}</span>
-                  <span className="text-3xl md:text-4xl font-serif text-white font-bold tracking-wider">RM11.00</span>
+                  <span className="text-3xl md:text-4xl font-mono text-white font-bold tracking-wider">RM11.00</span>
                 </div>
                 
                 {/* Quantity Selector */}
@@ -143,7 +143,7 @@ export default function ProductSection() {
                   >
                     <Minus size={14} />
                   </button>
-                  <span className="text-xl font-bold w-8 text-white">{quantities[scent.id]}</span>
+                  <span className="text-xl font-mono font-bold w-8 text-white">{quantities[scent.id]}</span>
                   <button 
                     onClick={() => updateQty(scent.id, 1)}
                     className="w-8 h-8 flex items-center justify-center border border-white/20 rounded hover:bg-gold hover:text-black transition-colors"
