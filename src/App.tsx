@@ -5,6 +5,7 @@ import BannerSection from './components/BannerSection';
 import Features from './components/Features';
 import ProductSection from './components/ProductSection';
 import AgentPackage from './components/AgentPackage';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import FloatingLeaves from './components/FloatingLeaves';
 import { MessageCircle } from 'lucide-react';
@@ -24,6 +25,7 @@ function MainLayout() {
         <Features />
         <ProductSection />
         <AgentPackage />
+        <Testimonials />
         
         {/* Company Background Section */}
         <section className="py-24 bg-forest/10 relative overflow-hidden border-y border-white/5">

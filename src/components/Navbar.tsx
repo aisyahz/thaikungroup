@@ -9,8 +9,8 @@ export default function Navbar() {
 
   const menuLinks = [
     { href: '#scents', label: t('nav_scents') },
-    { href: '#about', label: t('nav_collections') },
     { href: '#agent', label: t('nav_agent') },
+    { href: '#testimonials', label: t('nav_testimonials') },
   ];
 
   return (

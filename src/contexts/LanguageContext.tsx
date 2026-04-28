@@ -13,6 +13,7 @@ const translations = {
     nav_scents: 'Wangian',
     nav_collections: 'Koleksi',
     nav_about: 'Tentang Kami',
+    nav_testimonials: 'Testimoni',
     nav_agent: 'Jadi Agent',
     hero_badge: 'Couture Fragrance',
     hero_title_1: 'WANGIAN KERETA PREMIUM',
@@ -45,12 +46,24 @@ const translations = {
     agent_cta: 'Daftar Agent Sekarang',
     agent_msg: 'Hi Thaikun Group, saya berminat nak daftar sebagai agent Diamond Car Fragrance.\n\nPackage: Agent RM500\nStock: 90 pcs\nSaya nak tahu details untuk mula.',
     footer_desc: 'Diamond Car Fragrance oleh Thaikun Group Sdn Bhd. Kami fokus dalam produk wangian kereta yang premium, mampu milik dan sesuai untuk pasaran Malaysia.',
-    footer_background: 'Thaikun Group Sdn Bhd ditubuhkan sejak tahun 2023 dan fokus dalam produk wangian kereta yang premium, mampu milik dan sesuai untuk pasaran Malaysia.'
+    footer_background: 'Thaikun Group Sdn Bhd ditubuhkan sejak tahun 2023 dan fokus dalam produk wangian kereta yang premium, mampu milik dan sesuai untuk pasaran Malaysia.',
+    testi_badge: 'Kata-kata Pelanggan',
+    testi_title: 'Testimoni Premium',
+    testi_1_name: 'Hairul Azreen',
+    testi_1_role: 'Peminat Kereta',
+    testi_1_comment: 'Bau Diamond memang lain dari yang lain. Lepas letak dalam kereta, isteri pun puji kereta sentiasa wangi. Tahan lama sungguh!',
+    testi_2_name: 'Sarah Jane',
+    testi_2_role: 'Agensi Hartanah',
+    testi_2_comment: 'Sangat sesuai untuk saya yang sentiasa bawa client dalam kereta. Bau yang luxury tapi tak peningkan kepala. Design botol pun sangat premium.',
+    testi_3_name: 'Ahmad Daniel',
+    testi_3_role: 'Agent Diamond',
+    testi_3_comment: 'Pakej agent dia sangat berbaloi. Stok sentiasa laju keluar sebab kualiti dia setanding jenama antarabangsa tapi harga sangat mesra poket.'
   },
   EN: {
     nav_scents: 'Scents',
     nav_collections: 'Collections',
     nav_about: 'About Us',
+    nav_testimonials: 'Reviews',
     nav_agent: 'Become Agent',
     hero_badge: 'Couture Fragrance',
     hero_title_1: 'PREMIUM CAR FRAGRANCE',
@@ -83,7 +96,18 @@ const translations = {
     agent_cta: 'Register Agent Now',
     agent_msg: 'Hi Thaikun Group, I am interested in registering as a Diamond Car Fragrance agent.\n\nPackage: Agent RM500\nStock: 90 pcs\nI would like to know the details to get started.',
     footer_desc: 'Diamond Car Fragrance by Thaikun Group Sdn Bhd. Premium, affordable, and perfect for the Malaysian market.',
-    footer_background: 'Thaikun Group Sdn Bhd established since 2023, focusing on premium car fragrances that are affordable and suitable for the Malaysian market.'
+    footer_background: 'Thaikun Group Sdn Bhd established since 2023, focusing on premium car fragrances that are affordable and suitable for the Malaysian market.',
+    testi_badge: 'Customer Voice',
+    testi_title: 'Premium Testimonials',
+    testi_1_name: 'Hairul Azreen',
+    testi_1_role: 'Car Enthusiast',
+    testi_1_comment: 'The Diamond scent is truly unique. After placing it in my car, even my wife noticed the pleasant fragrance. It really lasts a long time!',
+    testi_2_name: 'Sarah Jane',
+    testi_2_role: 'Real Estate Agent',
+    testi_2_comment: 'Perfect for when I have clients in my car. The luxury scent is not overwhelming. The bottle design is also very premium.',
+    testi_3_name: 'Ahmad Daniel',
+    testi_3_role: 'Diamond Agent',
+    testi_3_comment: 'The agent package is totally worth it. Stocks move fast because the quality rivals international brands at a pocket-friendly price.'
   }
 };
 
