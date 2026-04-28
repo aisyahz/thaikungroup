@@ -21,7 +21,7 @@ export default function BannerSection() {
           className="w-full h-full object-cover bg-center transition-transform duration-700 group-hover:scale-105 hidden md:block"
         />
         <img 
-          src="/banner-mobile(2).png" 
+          src="/banner-mobile (2).png" 
           alt="Premium Collection Mobile" 
           className="w-full h-full object-cover object-bottom transition-transform duration-700 group-hover:scale-105 md:hidden"
         />
