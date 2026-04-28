@@ -17,6 +17,9 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-center w-full max-w-5xl mx-auto">
+         <p className="text-gold text-[9px] md:text-[11px] tracking-[0.5em] md:tracking-[0.7em] uppercase font-bold mb-8 md:mb-10 text-center opacity-90">
+            THAIKUN GROUP SDN BHD
+          </p>
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -27,9 +30,7 @@ export default function Hero() {
             alt="Thaikun Group Logo"
             className="mx-auto mb-4 h-24 md:h-36 lg:h-44 w-auto object-contain drop-shadow-2xl translate-y-2"
           />
-          <p className="text-gold text-[9px] md:text-[11px] tracking-[0.5em] md:tracking-[0.7em] uppercase font-bold mb-8 md:mb-10 text-center opacity-90">
-            THAIKUN GROUP SDN BHD
-          </p>
+         
           <span className="text-gold text-[10px] md:text-[13px] tracking-[0.4em] md:tracking-[0.5em] uppercase font-bold mb-8 md:mb-10 flex items-center justify-center gap-2 gold-text-glow">
             <Gem size={14} className="animate-pulse" />
             {t('hero_badge')}
