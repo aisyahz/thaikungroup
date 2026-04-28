@@ -40,7 +40,7 @@ export default function Navbar() {
               DIAMOND
             </h1>
             <p className="text-gold text-[6px] md:text-[8px] tracking-[0.4em] uppercase mt-1.5 opacity-70 font-bold whitespace-nowrap">
-              Thaikun Group Sdn Bhd
+              ✧ COUTURE FRAGRANCE ✧
             </p>
           </div>
         </div>
