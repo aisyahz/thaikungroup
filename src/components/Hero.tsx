@@ -30,7 +30,7 @@ export default function Hero() {
 
         {/* OPTIONAL BADGE (make smaller) */}
         <span className="text-gold text-[9px] tracking-[0.4em] uppercase mb-6 block opacity-80">
-          ✧ COUTURE FRAGRANCE ✧
+          Thaikun Group Sdn Bhd
         </span>
 
         {/* TITLE */}
