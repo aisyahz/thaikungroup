@@ -36,18 +36,7 @@ export default function Navbar() {
 
         <div className="absolute left-1/2 -translate-x-1/2">
           <div className="flex items-center justify-center group cursor-pointer">
-            <img 
-              src="/logo-ai.png" 
-              alt="Thaikun Group Logo" 
-              className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-                const fallback = (e.target as HTMLElement).parentElement?.querySelector('.fallback-text');
-                if (fallback) (fallback as HTMLElement).style.display = 'block';
-              }}
-              referrerPolicy="no-referrer"
-            />
-            <h1 className="fallback-text hidden font-display text-base md:text-xl tracking-[0.4em] text-white leading-none">
+            <h1 className="font-display text-base md:text-xl tracking-[0.4em] text-white leading-none transition-all group-hover:scale-105">
               DIAMOND
             </h1>
           </div>
