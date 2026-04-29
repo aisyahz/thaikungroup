@@ -35,11 +35,11 @@ export default function Navbar() {
         </div>
 
         <div className="absolute left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center justify-center group cursor-pointer">
-            <h1 className="font-display text-base md:text-xl tracking-[0.4em] text-white leading-none transition-all group-hover:scale-105">
+          <div className="flex flex-col items-center justify-center group cursor-pointer text-center">
+            <h1 className="font-display text-base md:text-xl tracking-[0.4em] text-white leading-none transition-all group-hover:scale-105 mr-[-0.4em]">
               DIAMOND
             </h1>
-            <p className="text-gold text-[6px] md:text-[8px] tracking-[0.4em] uppercase mt-1.5 opacity-70 font-bold whitespace-nowrap">
+            <p className="text-gold text-[6px] md:text-[8px] tracking-[0.4em] uppercase mt-1.5 opacity-70 font-bold whitespace-nowrap mr-[-0.4em]">
               ✧ COUTURE FRAGRANCE ✧
             </p>
           </div>

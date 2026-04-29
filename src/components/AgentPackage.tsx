@@ -7,9 +7,8 @@ export default function AgentPackage() {
   const { lang, t } = useLanguage();
 
   const handleRegister = () => {
-    const message = t('agent_msg');
-    const encodedMsg = encodeURIComponent(message);
-    window.open(`https://wa.me/60102082448?text=${encodedMsg}`, '_blank');
+    const message = encodeURIComponent(t('agent_msg'));
+    window.open(`https://wa.me/60102082448?text=${message}`, '_blank');
   };
 
   return (
@@ -81,7 +80,7 @@ export default function AgentPackage() {
               </div>
             </div>
           </motion.div>
-
+          
           {/* Right: Agent Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -146,7 +145,6 @@ export default function AgentPackage() {
               </button>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

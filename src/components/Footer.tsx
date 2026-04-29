@@ -1,51 +1,65 @@
 import React from 'react';
-import { Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Instagram, Send, Facebook, Mail } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
 
   return (
-    <footer className="bg-[#020202] py-20 px-6 border-t border-white/5">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 mb-20">
-          <div className="text-center md:text-left">
-            <h2 className="font-display text-2xl tracking-[0.4em] text-white mb-6">DIAMOND</h2>
-            <p className="text-white/70 text-[10px] tracking-widest leading-loose uppercase">
+    <footer className="bg-obsidian pt-24 pb-12 border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 mb-20">
+          <div>
+            <div className="mb-8">
+              <h2 className="text-2xl font-display tracking-[0.3em] text-gold uppercase mb-2">DIAMOND</h2>
+              <p className="text-white/40 text-[9px] tracking-[0.4em] uppercase">Couture Car Fragrance</p>
+            </div>
+            <p className="text-white/60 text-sm font-light leading-relaxed max-w-md mb-10">
               {t('footer_desc')}
             </p>
-          </div>
-
-          <div className="flex flex-col items-center text-center">
-            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-gold mb-8">{lang === 'BM' ? 'Hubungi Kami' : 'Contact Us'}</h4>
-            <div className="flex gap-8 text-white/80">
-              <a href="https://wa.me/60102082448" target="_blank" rel="noreferrer" className="hover:text-gold cursor-pointer transition-colors">
-                <MessageCircle size={24} />
+            <div className="flex items-center gap-6">
+              <a href="#" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all">
+                <Instagram size={18} />
               </a>
-              <Facebook size={24} className="hover:text-gold cursor-pointer transition-colors" />
-              <Instagram size={24} className="hover:text-gold cursor-pointer transition-colors" />
+              <a href="#" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all">
+                <Facebook size={18} />
+              </a>
+              <a href="https://wa.me/60102082448" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all">
+                <Send size={18} />
+              </a>
+              <a href="mailto:info@thaikungroup.com" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-all">
+                <Mail size={18} />
+              </a>
             </div>
-            <p className="mt-4 text-[11px] text-white/40 tracking-widest font-mono">+60 10-208 2448</p>
           </div>
-
-          <div className="text-center md:text-right">
-            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-white mb-6">Thaikun Group Sdn Bhd</h4>
-            <div className="text-[10px] tracking-widest text-white/70 space-y-2 uppercase">
-              <p>Established Since <span className="font-mono">2023</span></p>
-              <p>Malaysia's Premium Choice</p>
-              <div className="pt-4 flex justify-center md:justify-end gap-4 opacity-50">
-                <img src="https://flagcdn.com/w20/my.png" alt="Malaysia" className="w-5 h-auto grayscale hover:grayscale-0 transition-all" />
-              </div>
+          
+          <div className="grid grid-cols-2 gap-10">
+            <div>
+              <h4 className="text-white text-[10px] tracking-[0.4em] uppercase font-bold mb-8">Navigation</h4>
+              <ul className="space-y-4">
+                <li><a href="#scents" className="text-white/50 text-[11px] tracking-widest uppercase hover:text-gold transition-colors">{t('nav_scents')}</a></li>
+                <li><a href="#agent" className="text-white/50 text-[11px] tracking-widest uppercase hover:text-gold transition-colors">{t('nav_agent')}</a></li>
+                <li><a href="#testimonials" className="text-white/50 text-[11px] tracking-widest uppercase hover:text-gold transition-colors">{t('nav_testimonials')}</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white text-[10px] tracking-[0.4em] uppercase font-bold mb-8">Company</h4>
+              <p className="text-white/50 text-[11px] tracking-widest uppercase mb-2">Thaikun Group Sdn Bhd</p>
+              <p className="text-white/50 text-[11px] tracking-widest uppercase leading-loose">
+                Established 2023<br />
+                Kuala Lumpur, Malaysia
+              </p>
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 opacity-50">
-          <p className="text-[9px] tracking-widest uppercase mb-4 md:mb-0">© <span className="font-mono">2026</span> Thaikun Group Sdn Bhd. All Rights Reserved.</p>
-          <div className="flex gap-8 text-[9px] tracking-widest uppercase">
-            <a href="#" className="hover:text-gold transition-colors">Privacy</a>
-            <a href="#" className="hover:text-gold transition-colors">Terms</a>
-            <a href="#" className="hover:text-gold transition-colors">Shipping</a>
+        
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-white/30 text-[9px] tracking-[0.3em] font-mono uppercase">
+            &copy; {new Date().getFullYear()} THAIKUN GROUP SDN BHD. ALL RIGHTS RESERVED.
+          </p>
+          <div className="flex gap-10">
+            <a href="#" className="text-white/30 text-[9px] tracking-[0.3em] uppercase hover:text-white transition-colors">Privacy</a>
+            <a href="#" className="text-white/30 text-[9px] tracking-[0.3em] uppercase hover:text-white transition-colors">Terms</a>
           </div>
         </div>
       </div>
