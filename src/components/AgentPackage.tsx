@@ -131,7 +131,7 @@ export default function AgentPackage() {
                 </div>
                 <div className="text-left">
                   <h5 className="text-[11px] md:text-[12px] font-bold tracking-widest uppercase mb-1 text-white">Minimum Order</h5>
-                  <p className="text-white/60 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug"><span className="font-mono">1</span> tray (~<span className="font-mono">30</span>pcs) restock</p>
+                  <p className="text-white/60 text-[9px] md:text-[10px] tracking-wider uppercase leading-snug"><span className="font-mono">1</span> tray (~<span className="font-mono">45</span>pcs) restock</p>
                 </div>
               </div>
             </div>
